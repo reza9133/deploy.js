@@ -4,3 +4,4 @@ console.log("Starting deployment on Base network...");
 const Token = await ethers.getContractFactory("BaseBuilderToken");
 const token = await Token.deploy();
 await token.waitForDeployment();
+const tokenAddress = await token.getAddress();
