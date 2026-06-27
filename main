@@ -8,3 +8,4 @@ const tokenAddress = await token.getAddress();
 console.log(`BaseBuilderToken deployed to: ${tokenAddress}`);
 }
 main()
+Invoke main deployment function
