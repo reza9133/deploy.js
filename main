@@ -5,3 +5,4 @@ const Token = await ethers.getContractFactory("BaseBuilderToken");
 const token = await Token.deploy();
 await token.waitForDeployment();
 const tokenAddress = await token.getAddress();
+console.log(`BaseBuilderToken deployed to: ${tokenAddress}`);
